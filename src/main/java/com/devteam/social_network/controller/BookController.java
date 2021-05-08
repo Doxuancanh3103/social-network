@@ -58,10 +58,4 @@ public class BookController {
     public ResponseEntity<List<Book>> getAllBook(){
         return ResponseEntity.status(HttpStatus.OK).body(bookServiceCustom.getAllBook());
     }
-
-    @GetMapping("/get-top-ten-book-seller")
-    @ApiOperation("get-top-ten-book-seller")
-    public ResponseEntity<List<TopTenBookSdo>> getTopTenBookSeller(){
-        return ResponseEntity.status(HttpStatus.OK).body(bookServiceCustom.getTopTenBookSeller());
-    }
 }
